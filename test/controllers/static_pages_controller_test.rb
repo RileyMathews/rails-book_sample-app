@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
@@ -23,5 +23,11 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get contact_path
     assert_response :success
     assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
+  end
+
+  test "should get signup" do
+    get signup_path
+    assert_response :success
+    assert_select "title", "Sign up | Ruby on Rails Tutorial Sample App"
   end
 end
