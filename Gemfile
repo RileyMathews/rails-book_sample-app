@@ -4,7 +4,9 @@ source "https://rubygems.org"
 gem "bcrypt", git: "https://github.com/codahale/bcrypt-ruby.git", require: "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
+gem "bootstrap-will_paginate"
 gem "coffee-rails", "4.2.2"
+gem "faker"
 gem "jbuilder",     "2.7.0"
 gem "jquery-rails", "4.3.1"
 gem "puma",         "3.9.1"
@@ -12,6 +14,7 @@ gem "rails",        "5.2.1"
 gem "sass-rails",   "5.0.6"
 gem "turbolinks",   "5.0.1"
 gem "uglifier",     "3.2.0"
+gem "will_paginate"
 
 group :development, :test do
   gem "byebug",  "9.0.6", platform: :mri
